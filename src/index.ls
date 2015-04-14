@@ -6,7 +6,6 @@ require! {
 }
 
 module.exports = (opts=bare: true) -> 
-  console.log opts
   transform = (file, encoding, done) ->
     # Sanity checks
     if file.is-null!
