@@ -5,7 +5,7 @@ require! {
   "vinyl-sourcemaps-apply": apply-source-map
 }
 
-module.exports = (opts=bare: true) -> 
+module.exports = (opts=bare: false) -> 
   transform = (file, encoding, done) ->
     # Sanity checks
     if file.is-null!
